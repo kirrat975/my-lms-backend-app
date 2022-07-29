@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const fs = require('fs');
 // create our express app
 const app = express();
+const port = process.env.PORT || 5000;
 // middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,7 +16,7 @@ const routes = require('./routes/libook')
 app.use('/', routes)
 
 //start server
-app.listen(5000, ()=>{
+app.listen(port, ()=>{
     console.log("listeniing at port:5000")
 }) 
 app.listen(4000, ()=>{
