@@ -1,0 +1,639 @@
+{
+	"info": {
+		"_postman_id": "a12332f1-982a-4ade-af59-97f9e0200151",
+		"name": "LibraryMSKRS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"_postman_id": "32de437a-a1ae-4adb-9d68-3adb6de943f2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000",
+				"description": "Get request to display homepage of Library Management System"
+			},
+			"response": [
+				{
+					"id": "e2d17331-3217-4bb4-8a1d-993b2c650d1d",
+					"name": "Get Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "279"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"117-CKGquLXLD/HUzK0OnN3UjvPQgMc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 17:44:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Welcome to Library Management System \n  \n 1:To add new book type:http://localhost:5000/book/addbook \n 2:To get all books type:http://localhost:5000/book \n 3: To update an existing book type:http://localhost:5000/book/:id \n 4:To delete a book type:http://localhost:5000/book/:id \n"
+				}
+			]
+		},
+		{
+			"name": "Get Request",
+			"_postman_id": "1ec69ac9-248f-4dd8-8242-db2c50e06121",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/book",
+				"description": "Get request to display all book records of LMS"
+			},
+			"response": [
+				{
+					"id": "0cf2df00-d0c3-46c8-91a6-636b92662abf",
+					"name": "Get Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/book"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "640"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"280-sSuCtZPk0E/vjuNviCuOLkEsWic\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 17:48:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"1\": {\n        \"title\": \"Unlocking Android\",\n        \"isbn\": \"1933988673\",\n        \"pagecount\": 416,\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2009-04-01\",\n        \"authors\": [\n            \"W. Frank Ableson\",\n            \"Charlie Collins\",\n            \"Robi Sen\"\n        ],\n        \"genre\": [\n            \"Open Source\",\n            \"Mobile\"\n        ]\n    },\n    \"2\": {\n        \"title\": \"Android in Action, Second Edition\",\n        \"isbn\": \"1935182722\",\n        \"pagecount\": 592,\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2011-01-14\",\n        \"authors\": [\n            \"W. Frank Ableson\",\n            \"Robi Sen\"\n        ],\n        \"genre\": [\n            \"Java\"\n        ]\n    },\n    \"318006\": {\n        \"title\": \"Specification by Example\",\n        \"isbn\": \"1617290084\",\n        \"pagecount\": \"321\",\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2011-06-03\",\n        \"authors\": \"Gojko Adzic\",\n        \"genre\": \"Software Engineering\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Post Request",
+			"_postman_id": "ef876b79-0ec4-461e-927d-bfdde05a87d9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Harry Potter and Chamber of Secrets",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "9780439064866",
+							"type": "text"
+						},
+						{
+							"key": "pagecount",
+							"value": "251",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "Bloomsbury (UK)",
+							"type": "text"
+						},
+						{
+							"key": "publishedDate",
+							"value": "02-07-1998",
+							"type": "text"
+						},
+						{
+							"key": "authors",
+							"value": "J.K Rowling",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Children's Film",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/book/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"book",
+						"addbook"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Post request to create/add new book record."
+			},
+			"response": [
+				{
+					"id": "100eebe8-a5b2-47a3-99b9-8cf2cccc253b",
+					"name": "Post Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Harry Potter and Chamber of Secrets",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "9780439064866",
+									"type": "text"
+								},
+								{
+									"key": "pagecount",
+									"value": "251",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "Bloomsbury (UK)",
+									"type": "text"
+								},
+								{
+									"key": "publishedDate",
+									"value": "02-07-1998",
+									"type": "text"
+								},
+								{
+									"key": "authors",
+									"value": "J.K Rowling",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "Children's Film",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/addbook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"addbook"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-rBOQZUb9NJC8ATmN2oibBCDB8jw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 17:57:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"success\": true,\n    \"msg\": \"Book added successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get request",
+			"_postman_id": "799cccd2-5363-4055-8c00-c3d63d8dc86e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/book",
+				"description": "get request to show new book"
+			},
+			"response": [
+				{
+					"id": "46af4dad-07f2-4bc1-b4cf-fd568e38d37f",
+					"name": "get request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/book"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "847"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34f-nPUTdSiAfjQJRDpIb7NFDD1Z55Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 17:59:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"1\": {\n        \"title\": \"Unlocking Android\",\n        \"isbn\": \"1933988673\",\n        \"pagecount\": 416,\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2009-04-01\",\n        \"authors\": [\n            \"W. Frank Ableson\",\n            \"Charlie Collins\",\n            \"Robi Sen\"\n        ],\n        \"genre\": [\n            \"Open Source\",\n            \"Mobile\"\n        ]\n    },\n    \"2\": {\n        \"title\": \"Android in Action, Second Edition\",\n        \"isbn\": \"1935182722\",\n        \"pagecount\": 592,\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2011-01-14\",\n        \"authors\": [\n            \"W. Frank Ableson\",\n            \"Robi Sen\"\n        ],\n        \"genre\": [\n            \"Java\"\n        ]\n    },\n    \"133868\": {\n        \"title\": \"Harry Potter and Chamber of Secrets\",\n        \"isbn\": \"9780439064866\",\n        \"pagecount\": \"251\",\n        \"publisher\": \"Bloomsbury (UK)\",\n        \"publishedDate\": \"02-07-1998\",\n        \"authors\": \"J.K Rowling\",\n        \"genre\": \"Children's Film\"\n    },\n    \"318006\": {\n        \"title\": \"Specification by Example\",\n        \"isbn\": \"1617290084\",\n        \"pagecount\": \"321\",\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2011-06-03\",\n        \"authors\": \"Gojko Adzic\",\n        \"genre\": \"Software Engineering\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Put/Update request",
+			"_postman_id": "36dad818-a35b-4140-9bc8-50da9391ec34",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Android in Action, Third Edition",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": "http://localhost:5000/book/2",
+				"description": "Put/Update request to update an existing book record"
+			},
+			"response": [
+				{
+					"id": "226b2d6f-9d18-49ee-ba9b-d8e8d86f3504",
+					"name": "Put/Update request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Android in Action, Third Edition",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": "http://localhost:5000/book/2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-Vplg9ZlcO1arIOijzMM8cOMDS/c\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 18:03:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Book with id 2 has been updated"
+				}
+			]
+		},
+		{
+			"name": "get request",
+			"_postman_id": "9cf0cb91-1f7e-4085-9e86-4c117c676bdb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/book",
+				"description": "get request to display updated record"
+			},
+			"response": [
+				{
+					"id": "20b27737-ebd5-4ad8-9e51-ffd559be667d",
+					"name": "get request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/book"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "687"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2af-tatQovvDBqrrAnMvVasCT96phpI\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 18:05:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"1\": {\n        \"title\": \"Unlocking Android\",\n        \"isbn\": \"1933988673\",\n        \"pagecount\": 416,\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2009-04-01\",\n        \"authors\": [\n            \"W. Frank Ableson\",\n            \"Charlie Collins\",\n            \"Robi Sen\"\n        ],\n        \"genre\": [\n            \"Open Source\",\n            \"Mobile\"\n        ]\n    },\n    \"2\": {\n        \"title\": \"Android in Action, Third Edition\"\n    },\n    \"133868\": {\n        \"title\": \"Harry Potter and Chamber of Secrets\",\n        \"isbn\": \"9780439064866\",\n        \"pagecount\": \"251\",\n        \"publisher\": \"Bloomsbury (UK)\",\n        \"publishedDate\": \"02-07-1998\",\n        \"authors\": \"J.K Rowling\",\n        \"genre\": \"Children's Film\"\n    },\n    \"318006\": {\n        \"title\": \"Specification by Example\",\n        \"isbn\": \"1617290084\",\n        \"pagecount\": \"321\",\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2011-06-03\",\n        \"authors\": \"Gojko Adzic\",\n        \"genre\": \"Software Engineering\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete request",
+			"_postman_id": "ec1a5834-4117-425d-86d8-63b6944c5d88",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/book/delete/318006",
+				"description": "delete request to delete a particular book record"
+			},
+			"response": [
+				{
+					"id": "032c94a4-38ac-4d1f-bae1-502aa5e3ad13",
+					"name": "delete request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5000/book/delete/318006"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-5qIjOdJmCOha54YlAqxqGObaN3E\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 18:07:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "accounts with id 318006 has been deleted"
+				}
+			]
+		},
+		{
+			"name": "get request",
+			"_postman_id": "e68024c0-4213-49bb-981a-2e6dfbbf51e4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/book",
+				"description": "get request to display absence of deleted record"
+			},
+			"response": [
+				{
+					"id": "24eb89f8-b7bd-432a-b4bc-fad9c32a639b",
+					"name": "get request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/book"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "484"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e4-PjQDr1oLkUD/gz2NST2WeJHMASc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 18:08:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"1\": {\n        \"title\": \"Unlocking Android\",\n        \"isbn\": \"1933988673\",\n        \"pagecount\": 416,\n        \"publisher\": \"Manning Publications\",\n        \"publishedDate\": \"2009-04-01\",\n        \"authors\": [\n            \"W. Frank Ableson\",\n            \"Charlie Collins\",\n            \"Robi Sen\"\n        ],\n        \"genre\": [\n            \"Open Source\",\n            \"Mobile\"\n        ]\n    },\n    \"2\": {\n        \"title\": \"Android in Action, Third Edition\"\n    },\n    \"133868\": {\n        \"title\": \"Harry Potter and Chamber of Secrets\",\n        \"isbn\": \"9780439064866\",\n        \"pagecount\": \"251\",\n        \"publisher\": \"Bloomsbury (UK)\",\n        \"publishedDate\": \"02-07-1998\",\n        \"authors\": \"J.K Rowling\",\n        \"genre\": \"Children's Film\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
