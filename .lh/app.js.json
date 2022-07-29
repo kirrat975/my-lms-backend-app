@@ -1,0 +1,50 @@
+{
+    "sourceFile": "app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1659106783043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659106838117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System /n\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"1:To add new book type:http://localhost:5000/book/addbook\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"2:To get all books type:http://localhost:5000/book\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"3:To update an existing book type:http://localhost:5000/book/:id\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n"
+                },
+                {
+                    "date": 1659106882340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System /n\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"1:To add new book type:http://localhost:5000/book/addbook\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"2:To get all books type:http://localhost:5000/book\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"3:To update an existing book type:http://localhost:5000/book/:id\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n"
+                },
+                {
+                    "date": 1659106922033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"1:To add new book type:http://localhost:5000/book/addbook\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"2:To get all books type:http://localhost:5000/book\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"3:To update an existing book type:http://localhost:5000/book/:id\"); });\r\n app.get(\"/\", (req, res) =>{ res.send(\"4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n"
+                },
+                {
+                    "date": 1659107053091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,10 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n\"); });\r\n-app.get(\"/\", (req, res) =>{ res.send(\"1:To add new book type:http://localhost:5000/book/addbook\"); });\r\n-app.get(\"/\", (req, res) =>{ res.send(\"2:To get all books type:http://localhost:5000/book\"); });\r\n-app.get(\"/\", (req, res) =>{ res.send(\"3:To update an existing book type:http://localhost:5000/book/:id\"); });\r\n-app.get(\"/\", (req, res) =>{ res.send(\"4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n o update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n+\r\n // route\r\n \r\n const routes = require('./routes/libook')\r\n app.use('/', routes)\r\n"
+                },
+                {
+                    "date": 1659107158509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n o update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n  3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id /n\"); });\r\n \r\n // route\r\n \r\n const routes = require('./routes/libook')\r\n"
+                },
+                {
+                    "date": 1659107170364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n  3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id /n\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n  3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id \\n\"); });\r\n \r\n // route\r\n \r\n const routes = require('./routes/libook')\r\n"
+                },
+                {
+                    "date": 1659107193837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n  3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id \\n\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n 3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id \\n\"); });\r\n \r\n // route\r\n \r\n const routes = require('./routes/libook')\r\n"
+                },
+                {
+                    "date": 1659107210179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // middleware\r\n app.use(bodyParser.json())\r\n app.use(bodyParser.urlencoded({ extended: true }));\r\n \r\n-app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n 3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id \\n\"); });\r\n+app.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System \\n  \\n 1:To add new book type:http://localhost:5000/book/addbook \\n 2:To get all books type:http://localhost:5000/book \\n 3: To update an existing book type:http://localhost:5000/book/:id \\n 4:To delete a book type:http://localhost:5000/book/:id \\n\"); });\r\n \r\n // route\r\n \r\n const routes = require('./routes/libook')\r\n"
+                }
+            ],
+            "date": 1659106783043,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\nconst bodyParser = require(\"body-parser\");\r\nconst fs = require('fs');\r\n// create our express app\r\nconst app = express();\r\n// middleware\r\napp.use(bodyParser.json())\r\napp.use(bodyParser.urlencoded({ extended: true }));\r\n\r\napp.get(\"/\", (req, res) => { res.send(\"Welcome to Library Management System\"); });\r\napp.get(\"/\", (req, res) =>{ res.send(\"1:To add new book type:http://localhost:5000/book/addbook\"); });\r\napp.get(\"/\", (req, res) =>{ res.send(\"2:To get all books type:http://localhost:5000/book\"); });\r\napp.get(\"/\", (req, res) =>{ res.send(\"3:To update an existing book type:http://localhost:5000/book/:id\"); });\r\napp.get(\"/\", (req, res) =>{ res.send(\"4:To delete a book type:http://localhost:5000/book/:id\"); });\r\n// route\r\n\r\nconst routes = require('./routes/libook')\r\napp.use('/', routes)\r\n\r\n//start server\r\napp.listen(5000, ()=>{\r\n    console.log(\"listeniing at port:5000\")\r\n}) \r\napp.listen(4000, ()=>{\r\n    console.log(\"Welcome to Library Management System\")\r\n}) "
+        }
+    ]
+}
